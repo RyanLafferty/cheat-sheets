@@ -42,6 +42,12 @@ hello
 Lists the files in a given directory.
 ```
 
+### Common Uses
+```Bash
+* Examining the contents of a dicertory.
+* Looking up file/directory permissions.
+```
+
 ### Syntax
 ```Bash
 ls [FLAGS] [DIRECTORY]
@@ -145,9 +151,9 @@ Outputs lines matching a given pattern. The file may be excluded when input is p
 
 ### Common Uses
 ```Bash
-Searching for a certain pattern within the codebase. Example: Looking for a certain portion of code without knowing exactly what you are looking for.
+* Searching for a certain pattern within the codebase. Example: Looking for a certain portion of code without knowing exactly what you are looking for.
 
-Searching for a file that has a given pattern in the name or in the file itself without knowing exactly what you are looking for.
+* Searching for a file that has a given pattern in the name or in the file itself without knowing exactly what you are looking for.
 ```
 
 ### Syntax
