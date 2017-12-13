@@ -135,3 +135,45 @@ SEE ALSO
 
 GNU coreutils 8.25                                                                               February 2017     
 ```
+
+## grep
+
+### Description
+```Bash
+Outputs lines matching a given pattern. The file may be excluded when input is piped into grep.
+```
+
+### Syntax
+```Bash
+grep [FLAGS] PATTERN {FILE}
+```
+
+### Commonly Used Flags
+```Bash
+-r -> search recursively through a directory instead of a file
+-n -> output the line numbers of a match
+```
+
+### Example 1
+
+##### Command
+```Bash
+grep -rn 'file' .
+```
+##### Output
+```Bash
+./file.txt:1:This is the contents of the file.
+./directory/nested-directory/nested-file.txt:1:This is the contents of the nested file.
+```
+
+### Example 2
+
+##### Command
+```Bash
+ls -laR | grep 'file'
+```
+##### Output
+```Bash
+-rw-rw-r-- 1 USER GROUP   34 Dec 13 08:57 file.txt
+-rw-rw-r-- 1 USER GROUP   41 Dec 13 08:56 nested-file.txt
+```
