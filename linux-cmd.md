@@ -8,9 +8,9 @@
  * [chown](#chown)
  * [tail](#tail)
  * [ps](#ps)
+ * [ifconfig](#ifconfig)
  * [vim](#vim)
  * [git](#git)
- * [ifconfig](#ifconfig)
 
 ## cat
 
@@ -327,10 +327,6 @@ Outputs a report of the current processes.
 ```Bash
 ps [FLAGS]
 ```
-### Common Uses
-```Bash
-Get a list of currently running processes.
-```
 
 ### Example
 
@@ -342,5 +338,38 @@ ps
 ```Bash
 PID   TTY    TIME      CMD
 1111  pts/4  00:00:02  zsh
-11111 pts/4  00:00:00  ps
+11111l pts/4  00:00:00  ps
+```
+
+## ifconfig
+
+### Description
+```Bash
+Configures or displays the configuration of a network interface.
+```
+
+### Syntax
+```Bash
+ifconfig [FLAGS] [INTERFACE]
+```
+
+### Common Uses
+```Bash
+Display information associated with given network interfaces.
+```
+### Example
+
+##### Command
+```Bash
+ifconfig
+```
+##### Output
+```Bash
+DEVICE Link encap:TYPE  HWaddr ADDRESS 
+          inet addr:XXX.XX.X.X  Bcast:X.X.X.X  Mask:XXX.XXX.X.X
+          UP BROADCAST MULTICAST  MTU:XXXX  Metric:X
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
 ```
