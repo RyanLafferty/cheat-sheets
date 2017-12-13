@@ -3,7 +3,7 @@
  * [cat](#cat)
  * [ls](#ls)
  * [man](#man)
- * [Grep](#grep)
+ * [grep](#grep)
  * [chmod](#chmod)
  * [chown](#chown)
  * [tail](#tail)
