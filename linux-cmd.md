@@ -265,3 +265,35 @@ drwxrwxr-x 2 root root 4096 Dec 13 11:25 nested-directory
 total 0
 -rw-rw-r-- 1 root root 0 Dec 13 11:25 nested-file.txt
 ```
+
+## tail
+
+### Description
+```Bash
+Output the last portion of a file.
+```
+
+### Syntax
+```Bash
+tail [FLAGS] [FILE]
+```
+
+### Commonly Used Flags
+```Bash
+-n [NUMBER OF LINES] -> output the last n lines.
+```
+
+### Example
+
+##### Command
+```Bash
+tail -n 5 file.txt 
+```
+##### Output
+```Bash
+11
+12
+13
+14
+15
+```
