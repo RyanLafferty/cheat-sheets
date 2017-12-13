@@ -315,3 +315,32 @@ tail -n 5 file.txt
 14
 15
 ```
+
+## ps
+
+### Description
+```Bash
+Outputs a report of the current processes.
+```
+
+### Syntax
+```Bash
+ps [FLAGS]
+```
+### Common Uses
+```Bash
+Get a list of currently running processes.
+```
+
+### Example
+
+##### Command
+```Bash
+ps
+```
+##### Output
+```Bash
+PID   TTY    TIME      CMD
+1111  pts/4  00:00:02  zsh
+11111 pts/4  00:00:00  ps
+```
