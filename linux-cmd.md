@@ -182,7 +182,7 @@ ls -laR | grep 'file'
 
 ### Description
 ```Bash
-Changes the file mode bits. What this means is that you can change the file mode of a given file. For example this tool may be used to change a regular file to an executable file.
+Changes the file mode bits. What this means is that you can change the permissions of a given file or set of files. For example this tool may be used to change a regular file to an executable file.
 ```
 
 ### Syntax
@@ -209,4 +209,59 @@ chmod +x executable-file.sh
 ##### After
 ```Bash
 -rwxrwxr-x 1 USER GROUP 0 Dec 13 09:08 executable-file.sh
+```
+
+## chown
+
+### Description
+```Bash
+Changes the ownership of a given file.
+```
+
+### Syntax
+```Bash
+chown [FLAGS] [OWNER:GROUP] [FILE/DIRECTORY]
+```
+
+### Commonly Used Flags
+```Bash
+-R -> recursive
+```
+
+### Example
+
+##### Command
+```Bash
+sudo chown root:root directory
+```
+##### Before
+```Bash
+.:
+total 4
+drwxrwxr-x 3 USER GROUP 4096 Dec 13 11:24 directory
+
+./directory:
+total 4
+-rw-rw-r-- 1 USER GROUP    0 Dec 13 11:24 file.txt
+drwxrwxr-x 2 USER GROUP 4096 Dec 13 11:25 nested-directory
+
+./directory/nested-directory:
+total 0
+-rw-rw-r-- 1 USER GROUP 0 Dec 13 11:25 nested-file.txt
+```
+
+##### After
+```Bash
+.:
+total 4
+drwxrwxr-x 3 root root 4096 Dec 13 11:24 directory
+
+./directory:
+total 4
+-rw-rw-r-- 1 root root    0 Dec 13 11:24 file.txt
+drwxrwxr-x 2 root root 4096 Dec 13 11:25 nested-directory
+
+./directory/nested-directory:
+total 0
+-rw-rw-r-- 1 root root 0 Dec 13 11:25 nested-file.txt
 ```
