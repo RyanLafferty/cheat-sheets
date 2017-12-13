@@ -273,6 +273,11 @@ total 0
 Output the last portion of a file.
 ```
 
+### Common Uses
+```Bash
+The most common use is to read the most recent lines of a given log file.
+```
+
 ### Syntax
 ```Bash
 tail [FLAGS] [FILE]
