@@ -143,6 +143,13 @@ GNU coreutils 8.25                                                              
 Outputs lines matching a given pattern. The file may be excluded when input is piped into grep.
 ```
 
+### Common Uses
+```Bash
+Searching for a certain pattern within the codebase. Example: Looking for a certain portion of code without knowing exactly what you are looking for.
+
+Searching for a file that has a given pattern in the name or in the file itself without knowing exactly what you are looking for.
+```
+
 ### Syntax
 ```Bash
 grep [FLAGS] PATTERN {FILE}
