@@ -177,3 +177,36 @@ ls -laR | grep 'file'
 -rw-rw-r-- 1 USER GROUP   34 Dec 13 08:57 file.txt
 -rw-rw-r-- 1 USER GROUP   41 Dec 13 08:56 nested-file.txt
 ```
+
+## chmod
+
+### Description
+```Bash
+Changes the file mode bits. What this means is that you can change the file mode of a given file. For example this tool may be used to change a regular file to an executable file.
+```
+
+### Syntax
+```Bash
+chmod [FLAGS] [MODE]
+```
+
+### Commonly Used Flags
+```Bash
+-R -> recursive
+```
+
+### Example
+
+##### Command
+```Bash
+chmod +x executable-file.sh
+```
+##### Before
+```Bash
+-rw-rw-r-- 1 USER GROUP 0 Dec 13 09:08 executable-file.sh
+```
+
+##### After
+```Bash
+-rwxrwxr-x 1 USER GROUP 0 Dec 13 09:08 executable-file.sh
+```
