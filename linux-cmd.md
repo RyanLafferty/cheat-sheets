@@ -64,9 +64,9 @@ ls -al
 ```
 ##### Output
 ```Bash
-drwxrwxr-x 3 USER USER 4096 Dec 13 08:35 .
-drwxrwxr-x 4 USER USER 4096 Dec 13 08:35 ..
-drwxrwxr-x 2 USER USER 4096 Dec 13 08:35 directory
--rw-rw-r-- 1 USER USER    0 Dec 13 08:35 .dotfile
--rw-rw-r-- 1 USER USER    0 Dec 13 08:35 regular-file.txt
+drwxrwxr-x 3 USER GROUP 4096 Dec 13 08:35 .
+drwxrwxr-x 4 USER GROUP 4096 Dec 13 08:35 ..
+drwxrwxr-x 2 USER GROUP 4096 Dec 13 08:35 directory
+-rw-rw-r-- 1 USER GROUP    0 Dec 13 08:35 .dotfile
+-rw-rw-r-- 1 USER GROUP    0 Dec 13 08:35 regular-file.txt
 ```
