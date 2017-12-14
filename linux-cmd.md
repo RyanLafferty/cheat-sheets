@@ -9,8 +9,6 @@
  * [tail](#tail)
  * [ps](#ps)
  * [ifconfig](#ifconfig)
- * [vim](#vim)
- * [git](#git)
 
 ## cat
 
